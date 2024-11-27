@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <style>
+         {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0px 0px 8px #00FF00, 0px 0px 12px #00FF00;
+        }
+
+        .creator {
+            font-size: 1em;
+            color: #00FF00;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 8px #00FF00, 0px 0px 12px #00FF00;
+        }
+
+        .button {
+            background-color: #00FF00;
+            color: #003300;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            text-shadow: 0px 0px 6px #00FF00;
+            box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #009900;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="creator">Készítette: Tóth Zalán</div>
+
+    <a href="orarend.html">
+        <button class="button">Órarend megtekintése</button>
+    </a>
+
+</body>
+</html>
